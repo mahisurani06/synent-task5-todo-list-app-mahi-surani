@@ -1,6 +1,4 @@
-# TaskFlow ⚡
 
-> **Work smarter, ship faster.**
 
 > # To-Do List App
 
@@ -24,18 +22,6 @@ Develop a task management web application that allows users to efficiently manag
 * Responsive and user-friendly interface
 * Clean and modern design
 
-## Project Outcome
-
-Successfully implemented a functional task management application with persistent data storage, improving my JavaScript and frontend development skills.
-
-## Author
-
-Mahi Surani
-
-GitHub: https://github.com/mahisurani06
-
-LinkedIn: https://www.linkedin.com/in/mahi-surani-9bab5333b/
-
 
 ## 📂 Folder Structure
 
@@ -49,17 +35,15 @@ TaskFlow/
 └── README.md       ← You are here
 ```
 
----
+## Project Outcome
 
+Successfully implemented a functional task management application with persistent data storage, improving my JavaScript and frontend development skills.
 
-## 📸 Screenshots
+## Author
 
-> Add screenshots here after capturing the app on desktop and mobile.
+Mahi Surani
 
-| Desktop | Mobile |
-|---|---|
-| *(screenshot)* | *(screenshot)* |
+GitHub: https://github.com/mahisurani06
 
----
-
+LinkedIn: https://www.linkedin.com/in/mahi-surani-9bab5333b/
 
