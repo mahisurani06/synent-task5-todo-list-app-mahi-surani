@@ -39,11 +39,11 @@ TaskFlow/
 
 ### Main Interface
 
-![Main Interface](screenshots/main.png)
+![Main Interface](screenshot/main.png)
 
 ### Tasks Added
 
-![Tasks Added](screenshots/task.png)
+![Tasks Added](screenshot/task.png)
 
 ## Project Outcome
 
