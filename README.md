@@ -1,6 +1,6 @@
 
 
-> # To-Do List App
+## To-Do List App
 
 ## Objective
 
@@ -34,6 +34,16 @@ TaskFlow/
 ├── assets/         ← (Reserved for screenshots / icons)
 └── README.md       ← You are here
 ```
+
+## Screenshots
+
+### Main Interface
+
+![Main Interface](screenshots/main.png)
+
+### Tasks Added
+
+![Tasks Added](screenshots/task.png)
 
 ## Project Outcome
 
