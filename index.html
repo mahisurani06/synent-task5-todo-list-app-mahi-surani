@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TaskFlow — The premium task management tool built for focused teams and individuals." />
+  <title>TaskFlow — Work smarter, ship faster.</title>
+
+  <!-- Google Fonts: Outfit (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───────────────────────────────────────────
+       BACKGROUND ATMOSPHERE
+  ─────────────────────────────────────────── -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ───────────────────────────────────────────
+       HEADER / NAV
+  ─────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="TaskFlow home">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="9" height="9" rx="2.5" fill="url(#g1)"/>
+            <rect x="12" y="1" width="9" height="9" rx="2.5" fill="url(#g2)" opacity="0.7"/>
+            <rect x="1" y="12" width="9" height="9" rx="2.5" fill="url(#g3)" opacity="0.5"/>
+            <rect x="12" y="12" width="9" height="9" rx="2.5" fill="url(#g4)" opacity="0.85"/>
+            <defs>
+              <linearGradient id="g1" x1="1" y1="1" x2="10" y2="10" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="12" y1="1" x2="21" y2="10" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#38bdf8"/><stop offset="1" stop-color="#0ea5e9"/>
+              </linearGradient>
+              <linearGradient id="g3" x1="1" y1="12" x2="10" y2="21" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#34d399"/><stop offset="1" stop-color="#059669"/>
+              </linearGradient>
+              <linearGradient id="g4" x1="12" y1="12" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f472b6"/><stop offset="1" stop-color="#db2777"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">TaskFlow</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+        <li>
+          <a href="#dashboard" class="nav-cta" aria-label="Open app">
+            Open App
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation" hidden>
+      <a href="#features" class="mobile-link">Features</a>
+      <a href="#dashboard" class="mobile-link">Dashboard</a>
+      <a href="#dashboard" class="mobile-link mobile-link--cta">Open App →</a>
+    </div>
+  </header>
+
+  <!-- ───────────────────────────────────────────
+       MAIN
+  ─────────────────────────────────────────── -->
+  <main>
+
+    <!-- ── HERO + DASHBOARD two-col layout ── -->
+    <section class="split-layout" aria-label="Product overview">
+
+      <!-- LEFT: Hero Content -->
+      <div class="hero-content">
+
+<!--        <div class="product-badge" aria-label="Product category">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Built for Internship @ Synent Technologies
+        </div>-->
+
+        <h1 class="hero-headline">
+          Work smarter,<br />
+          <span class="gradient-text">ship faster.</span>
+        </h1>
+
+        <p class="hero-desc">
+          TaskFlow is a distraction-free task manager that keeps your work visible, organized, and moving — so nothing slips through the cracks.
+        </p>
+
+        <!-- Feature highlights -->
+        <ul class="feature-pills" id="features" role="list" aria-label="Key features">
+          <li class="pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Persists across sessions
+          </li>
+          <li class="pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Real-time statistics
+          </li>
+          <li class="pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Zero distractions
+          </li>
+          <li class="pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Fully responsive
+          </li>
+        </ul>
+
+        <!-- Stats band -->
+        <div class="hero-stats" aria-label="Live task statistics">
+          <div class="hstat">
+            <span class="hstat-value" id="stat-total">0</span>
+            <span class="hstat-label">Total</span>
+          </div>
+          <div class="hstat-divider" aria-hidden="true"></div>
+          <div class="hstat">
+            <span class="hstat-value hstat-value--done" id="stat-done">0</span>
+            <span class="hstat-label">Done</span>
+          </div>
+          <div class="hstat-divider" aria-hidden="true"></div>
+          <div class="hstat">
+            <span class="hstat-value hstat-value--pending" id="stat-pending">0</span>
+            <span class="hstat-label">Pending</span>
+          </div>
+        </div>
+
+      </div><!-- /hero-content -->
+
+      <!-- RIGHT: Dashboard -->
+      <div class="dashboard" id="dashboard" aria-label="Task dashboard">
+
+        <div class="dashboard-header">
+          <h2 class="dashboard-title">
+            <span class="dashboard-title-icon" aria-hidden="true">⚡</span>
+            My Tasks
+          </h2>
+          <span class="dashboard-date" id="dashboard-date" aria-label="Today's date"></span>
+        </div>
+
+        <!-- Input row -->
+        <div class="input-row" role="search" aria-label="Add a new task">
+          <div class="input-wrapper">
+            <span class="input-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="6.5" stroke="#6b7280" stroke-width="1.3"/>
+                <path d="M8 5v3l2 2" stroke="#6b7280" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <input
+              type="text"
+              id="task-input"
+              class="task-input"
+              placeholder="Add a task — press Enter or click Add"
+              maxlength="120"
+              autocomplete="off"
+              aria-label="New task description"
+            />
+          </div>
+          <button class="add-btn" id="add-btn" aria-label="Add task">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>Add</span>
+          </button>
+        </div>
+
+        <!-- Toast -->
+        <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+        <!-- Task list -->
+        <div class="task-list-wrapper" aria-label="Task list">
+          <ul class="task-list" id="task-list" role="list" aria-label="Tasks">
+            <!-- Tasks injected by JS -->
+          </ul>
+
+          <!-- Empty state -->
+          <div class="empty-state" id="empty-state" aria-label="No tasks yet">
+            <div class="empty-illustration" aria-hidden="true">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="18" width="56" height="42" rx="8" fill="none" stroke="url(#eg1)" stroke-width="2"/>
+                <path d="M22 12h28a4 4 0 0 1 4 4v4H18v-4a4 4 0 0 1 4-4z" fill="url(#eg2)" opacity="0.4"/>
+                <line x1="22" y1="36" x2="50" y2="36" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3"/>
+                <line x1="22" y1="46" x2="42" y2="46" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3"/>
+                <circle cx="55" cy="52" r="10" fill="url(#eg3)"/>
+                <path d="M51 52l3 3 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="eg1" x1="8" y1="18" x2="64" y2="60" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#7c3aed" stop-opacity="0.4"/><stop offset="1" stop-color="#0ea5e9" stop-opacity="0.2"/>
+                  </linearGradient>
+                  <linearGradient id="eg2" x1="18" y1="12" x2="54" y2="20" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#a78bfa"/><stop offset="1" stop-color="#38bdf8"/>
+                  </linearGradient>
+                  <linearGradient id="eg3" x1="45" y1="42" x2="65" y2="62" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <p class="empty-title">Your canvas is clean</p>
+            <p class="empty-sub">Add your first task above to get started.</p>
+          </div>
+        </div>
+
+        <!-- Dashboard footer -->
+        <div class="dashboard-footer" aria-label="Quick actions">
+          <span class="footer-hint">
+            <kbd>Enter</kbd> to add quickly
+          </span>
+          <button class="clear-btn" id="clear-btn" aria-label="Clear all completed tasks">
+            Clear completed
+          </button>
+        </div>
+
+      </div><!-- /dashboard -->
+    </section><!-- /split-layout -->
+
+  </main>
+
+  <!-- ───────────────────────────────────────────
+       FOOTER
+  ─────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      Built by <strong>Mahi</strong> 
+    <!-- <strong>Synent Technologies Web Development Internship</strong>.-->
+      &mdash; Crafted with HTML5, CSS3 &amp; Vanilla JS.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
